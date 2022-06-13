@@ -1,33 +1,52 @@
-# Bucles [Python]
+# Funciones [Python]
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
-# Version: 2.0
+# Version: 2.2
 
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
-# Ejercicios con bucles "while"
+# Ejercicios con funciones
 
-x = 0
-# Realizar un bucle "while" cuya condición de continuidad
-# sea que <x sea menor a 10> y que <x sea distinto de 6>
-# Colocar ambas condiciones como condicion del "while" realizando
-# una condición compuesta (utilice el operador "and" o "or" según corresponda)
-# En cada iteracion del bucle debe incrementar el valor de "x" en "2"
-# e imprimir en pantalla el resultado de X (antes de incrementar) con print
-while x < 10 and x != 6: 
-    print("x es:", x)
-    x += 2 
+# --------------------------------
+# Aquí dentro definir la función que solicitará
+# el nombre de tres invitados
+# def generar_invitados():
+def generar_invitados ():
+    invitados=[]
+    for i in range(3):
+        invitados.append (input("Ingrese el nombre de un invitado:"))
+        return invitados
 
-# Realice el mismo bucle "while" pero en vez de estar formado por una condición
-# compuesta, que el "while" siga iterando mientras <x sea menos a 10>, y dentro del
-# "while" consultar si <x es igual a 6>, y en ese caso realizar una interrupción del bucle
-# En cada iteracion del bucle debe incrementar el valor de "x" en "2"
-# e imprimir en pantalla el resultado de X (antes de incrementar) con print
-while x < 10:
-    if x == 6:
-        break
-    print(" x es:", x)
-    x += 2
-print("terminamos!")
+# --------------------------------
+
+
+if __name__ == '__main__':
+    print("Bienvenidos a otra clase de Inove con Python")
+    
+    # Alumno: Crear la función "generar_invitados"
+
+    # Dentro de esa función el sistema deberá solicitar
+    # al usuario por consola que ingrese tres nombres de 
+    # tres invitados.
+    # IMPORTANTE: Utilizar un "input" por cada invitado
+    # que se solicite ingresar
+
+    # Los tres nombres ingresados se deberán guardar en
+    # una lista
+
+    # La función generar_invitados deberá retornar
+    # la lista de invitados generados
+
+    # NOTA: Recomendamos utilizar bucles para no repetir código
+    # y solicitar los 3 invitiados, uno en cada iteración del bucle
+
+    # Luego de crear la función invocarla en este lugar:
+lista_invitados : generar_invitados()
+print(f"Ver lista de invitados: {lista_invitados}")
+    # lista_invitados = generar_invitados()
+
+    # Imprimir en pantalla "lista_invitados":
+
+print("terminamos")

@@ -1,39 +1,32 @@
-# Bucles [Python]
+# Funciones [Python]
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
-# Version: 2.0
+# Version: 2.2
 
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
-# Ejercicios con bucles "while"
+# Ejercicios con funciones
 
-x = 0
-# Dado el siguiente "while", complete la condicion
-# para que el "while" itere siempre que <x sea menor a 6>
-# Además, complete la línea de código necesaria para que
-# el valor de "x" incremente "1" en cada iteración
-condicion = False
-
-# reemplace "condicion" por lo que crea necesario
-
-while x < 6:
-    print('Valor de x=', x)
-    x +=1
-
-    # Coloque la línea de código para que "x" incremente "1"
+def imprimir_mayor(numero_1, numero_2):
+    print("Funcion imprimir mayor")
+    if numero_1 > numero_2:
+        print(f"El mayor es: {numero_1}")
+    elif numero_1 < numero_2:
+        print(f"El mayor es: {numero_2}")
+    else: print(f" Son iguales")
+    
+    # En esta función debe determinar cual de los dos
+    # números ingresados por parámetro es mayor
+    # y luego imprimir dicho valor en pantalla
 
 
-x = 5
-# Dado el siguiente "while", complete la condicion
-# para que el "while" itere siempre que <x sea mayor o igual a 0>
-# Además, complete la línea de código necesaria para que
-# el valor de "x" decremente "1" en cada iteración
 
-while x > 0:    # reemplace "condicion" por lo que crea necesario
-    print("Valor de x =", x)
-    x -=1
-    # Coloque la línea de código para que "x" decremente "1"
+if __name__ == '__main__':
+    print("Bienvenidos a otra clase de Inove con Python")
+    
+    # Alumno: Complete la función "imprimir_mayor"
+    imprimir_mayor(2, 10)
 
-print("terminamos!")
+    print("terminamos")
